@@ -62,7 +62,7 @@ namespace SystemMonitor.Services
                     }
                     catch (Exception ex)
                     {
-                        _logger.LogError(ex, "Plugin {name} threw during OnMetricsAsync initiation", p.Name);
+                        _logger.LogError(ex, "Plugin {name} threw during OnMetricsAsync initiation", p.PlugInName);
                     }
                 }
                 await Task.WhenAll(tasks);
